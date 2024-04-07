@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form #f="ngForm" (ngSubmit)="login(f)" class="border p-4 shadow rounded">
+        <h2 class="text-center mb-4">Login</h2>
+
+        <div class="mb-3">
+          <!-- <label for="email" class="form-label"><i class="fas fa-user"></i> Email</label> -->
+          <div class="input-group">
+            <span class="input-group-text" id="emailIcon"><i class="fas fa-envelope"></i></span>
+            <input type="text" #email="ngModel" ngModel name="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="emailIcon">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <!-- <label for="password" class="form-label"><i class="fas fa-lock"></i> Password</label> -->
+          <div class="input-group">
+            <span class="input-group-text" id="passwordIcon"><i class="fas fa-lock"></i></span>
+            <input type="password" #password="ngModel" ngModel name="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="passwordIcon">
+          </div>
+        </div>
+
+        <!-- <div class="mb-3 text-end">
+          <a href="#" class="text-decoration-none">Forgot your password?</a>
+        </div> -->
+
+        <button type="submit" class="btn btn-secondary btn-block" style="width: 100%;">Login</button>
+
+        <div class="alert alert-danger mt-3" *ngIf="messageError">{{messageError}}</div>
+
+        <div class="mt-3 text-center">
+          <a href="register" class="text-decoration-none">Don't have an account yet? Sign up here.</a>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</div>

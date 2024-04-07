@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css (ou le fichier de style de votre composant) */
+.plats-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .plats-list-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .plats-list-item h6 {
+    margin: 0;
+  }
+  
+  .plats-list-item img {
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    margin-right: 5px;
+  }
+  
+  .plats-list-item span {
+    float: right;
+    color: #007BFF;
+  }
+  
+  /* menu.component.css */
+.delete-button {
+  background-color: #dc3545; /* Couleur rouge de la classe btn-danger */
+  color: #fff; /* Couleur du texte */
+  border: none; /* Supprimez la bordure */
+  border-radius: 50%; /* Forme de cercle */
+  /* padding: 0px 5px; Ajustez le rembourrage selon vos besoins */
+  cursor: pointer; /* Curseur de pointeur au survol */
+  /* margin: 1px; */
+}
